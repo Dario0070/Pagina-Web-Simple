@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link rel="stylesheet" href="style.css">
+ 
+<body> 
+    <canvas id="canvas" width="200" height="200"></canvas>
+    <script>
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+ </script>
+    <script src="javascript.js"></script>
+     <img src="img/jol.jpg" width="200px" height="200px" alt="kk">
+    <svg width="1000" height="1000">
+        <path d="M 0 0 L200 200 L200 0 Z"
+        style="stroke:rgb(218, 33, 33); fill:none;"/>
+        <path d="M0 0 L0 100 L100 100 L100 0 Z"/>
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="800"
+                    dur="5s" fill="freeze"
+                    repeatCount="999999999999999"/>
+        </rect>
+    </svg>
+    <script>
+        context.fillStyle = "rgba(0, 200, 0, 1)";
+        ctx.fillRect = (36, 10, 200, 200);
+        ctx.stroke();
+    </script>
+    </body>
+</html>
